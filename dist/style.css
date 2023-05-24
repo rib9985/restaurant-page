@@ -1,0 +1,31 @@
+.intro {
+    gap: 10px;
+    padding: 20px;
+}
+
+.nav{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.about:hover, .menu:hover, .rev:hover, .address:hover {
+    color:aliceblue;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.title{
+    font-size: 3rem;
+    color:aqua;
+}
+
+.title:hover{
+   color: aliceblue;
+}
