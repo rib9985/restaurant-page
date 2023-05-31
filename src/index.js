@@ -1,6 +1,4 @@
 import './style.css'
-import '.home.js'
+import { loadHome } from './home.js'
 
 loadHome()
-
-console.log('everything is working')

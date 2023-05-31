@@ -29,3 +29,19 @@
 .title:hover{
    color: aliceblue;
 }
+
+.restaurant-image{
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    max-height: 500px;
+    transform: rotate(90deg);
+}
+
+.home{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

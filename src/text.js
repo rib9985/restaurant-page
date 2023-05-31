@@ -1,3 +1,5 @@
+import { ContextExclusionPlugin } from "webpack"
+
 //Functions
 function createParagraph(text, cssClassName){
     const paragraph = document.createElement('p')
@@ -7,7 +9,7 @@ return paragraph
 }
 
 function createImage(imageSource, alt, cssClassName){
-    const image = document.createElement('img')
+    const image = new Image()
     image.alt= alt
     image.src=imageSource
     image.setAttribute('class', `${cssClassName}`)
@@ -22,9 +24,20 @@ function createHeader(typeOfHeader, text,cssClassName){
     return header
 }
 
+function createAnchorLink (text, htmlLink, cssClassName, id){
+    const anchor = document.createElement(a)
+    anchor.setAttribute('class', `${cssClassName}`)
+    anchor.setAttribute('id', `${id}`)
+    anchor.setAttribute('href',`${htmlLink}`)
+    anchor.textContent = text
+    return anchor
+}
 
 
-
+function emptyContentDiv(id){
+    const contentDiv = document.getElementById(`${id}`)
+    contentDiv.textContent = ''
+}
 
 //Text Used in the Menu Module
 
@@ -41,4 +54,4 @@ const aboutParagraph = 'This is story about how Italy and its cuisine was made. 
 const moreAboutUs = 'Check out more about us on this website! Feel free to navigate! Lorem ipsum dolor sit amet, consectetur adipiscing elit'
 
 
-export default aboutParagraph; moreAboutUs; createHeader(); createParagraph(); createImage();
+export {aboutParagraph, moreAboutUs, createHeader, createParagraph, createImage, createAnchorLink, emptyContentDiv}
