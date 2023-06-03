@@ -17,6 +17,7 @@ function createLogo(){
     return logo
 }
 
+
 function loadNavBar(){
     const contentDiv = document.getElementById('content')
     contentDiv.appendChild(createLogo())

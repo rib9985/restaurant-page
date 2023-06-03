@@ -34,6 +34,32 @@ function createAnchorLink (text, htmlLink, cssClassName, id){
 }
 
 
+
+function createLabel(labelname, text){
+ const label = document.createElement('label')
+ label.setAttribute('for', `${labelname}`)
+ label.setAttribute('class', `${labelname}`)
+ label.textContent = text
+return label
+}
+
+function createInput(typeOfInput, id, cssClassName){
+    const input = document.createElement('input')
+    input.setAttribute('type', `${typeOfInput}`)
+    input.setAttribute('id',`${id}`)
+    input.setAttribute('class',`${cssClassName}`)
+    input.setAttribute('value',`${value}`)
+    return input
+}
+
+function createButton(typeOfButton, id, cssClassName){
+    const button = document.createElement('button')
+    button.setAttribute('type', `${typeOfButton}`)
+    button.setAttribute('id',`${id}`)
+    button.setAttribute('class',`${cssClassName}`)
+    return button
+}
+
 function emptyContentDiv(id){
     const contentDiv = document.getElementById(`${id}`)
     contentDiv.textContent = ''
@@ -45,7 +71,7 @@ function emptyContentDiv(id){
 
 
 //Text Used in the Reservations Module
-
+const reservationText = 'Have someone special you would like to invite? How about a special occassion? Feel free to reserve a table below!'
 
 
 
