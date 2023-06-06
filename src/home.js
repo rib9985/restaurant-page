@@ -16,7 +16,6 @@ function createHome(){
 
 function loadHome(){
     const contentDiv = document.getElementById('content')
-    contentDiv.textContent = ''
     contentDiv.appendChild(createHome())
 }
 

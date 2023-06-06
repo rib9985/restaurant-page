@@ -1,5 +1,3 @@
-import { ContextExclusionPlugin } from "webpack"
-
 //Functions
 function createParagraph(text, cssClassName){
     const paragraph = document.createElement('p')
@@ -25,7 +23,7 @@ function createHeader(typeOfHeader, text,cssClassName){
 }
 
 function createAnchorLink (text, htmlLink, cssClassName, id){
-    const anchor = document.createElement(a)
+    const anchor = document.createElement('a')
     anchor.setAttribute('class', `${cssClassName}`)
     anchor.setAttribute('id', `${id}`)
     anchor.setAttribute('href',`${htmlLink}`)
