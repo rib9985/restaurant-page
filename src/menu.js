@@ -13,7 +13,7 @@ function createMenu(){
     menu.appendChild(createMenuItem('two', menuItemTwo, 'lasangha', 'menuItemTwo', '2', text.lasagna, 'Lasagna'))
     menu.appendChild(createMenuItem('three', menuItemThree, 'matriciana', 'menuItemThree', '3', text.matriciana, 'Matriciana'))
 
-
+    return menu
 }   
 
 function createMenuItem(item, imageSource, imageAltName, cssClassName, cssId, description, dishname){
@@ -23,3 +23,10 @@ function createMenuItem(item, imageSource, imageAltName, cssClassName, cssId, de
     menuItem.appendChild(text.createParagraph(description, `${cssClassName}-paragraph`))
     return menuItem
 }
+
+function loadMenu(){
+    const contentDiv = document.getElementById('content')
+    contentDiv.appendChild(createMenu())
+}
+
+export {loadMenu}

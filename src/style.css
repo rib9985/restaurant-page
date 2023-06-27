@@ -76,3 +76,24 @@
 transform: scale(110%);
 color:green;
 }
+
+.menuItemOne-image, .menuItemTwo-image, .menuItemThree-image {
+    display: flex;
+    max-height: 400px;
+    max-width: 400px;
+    padding: 2rem;
+}
+
+.menu{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu>*{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6rem;
+}
