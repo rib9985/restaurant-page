@@ -3,10 +3,10 @@ import logoPng from './img/logo.png'
 
 function createNavBar(){
     const nav = text.createHeader('header', '', 'nav-header')
-    nav.appendChild(text.createAnchorLink('Home','','nav-home','nav-home'))
-    nav.appendChild(text.createAnchorLink('Menu','','nav-menu','nav-menu'))
-    nav.appendChild(text.createAnchorLink('Reservations','','nav-reserve','nav-reserve'))
-    nav.appendChild(text.createAnchorLink('Informations','','nav-info','nav-info'))
+    nav.appendChild(text.createDiv('Home','nav','nav-home'))
+    nav.appendChild(text.createDiv('Menu','nav','nav-menu'))
+    nav.appendChild(text.createDiv('Reservations','nav','nav-reserve'))
+    nav.appendChild(text.createDiv('Informations','nav','nav-info'))
     return nav   
 }
 
