@@ -74,7 +74,7 @@ function createButton(typeOfButton, id, cssClassName){
 
 function emptyContentDiv(id){
     const contentDiv = document.getElementById(`${id}`)
-    contentDiv.textContent = ''
+    contentDiv.innerHTML = ''
 }
 
 //Text Used in the Menu Module

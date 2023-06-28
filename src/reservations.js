@@ -1,5 +1,5 @@
 import * as text from './text.js'
-import callUsIcon from 'src/img/call_FILL0_wght400_GRAD0_opsz48.svg'
+import callUsIcon from './img/call_FILL0_wght400_GRAD0_opsz48.svg'
 
 function createForm(){
     const form = text.createDiv('', 'reservations-div', 'reservations-div-1')
@@ -20,7 +20,7 @@ function createCallUsArea(){
     return callDiv
 }
 
-function createReservation(){
+function createReservationPage(){
     const reservation = document.createElement('div')
     reservation.setAttribute('class', 'div-reservation');
     reservation.appendChild(text.createHeader('h1', 'Reservations', 'reservation-header'))
@@ -32,9 +32,9 @@ function createReservation(){
 }
 
 
-function loadReservation(){
+function loadReservations(){
     const contentDiv = document.getElementById('content')
-    contentDiv.appendChild(createReservation())
+    contentDiv.appendChild(createReservationPage())
 }
 
-export {loadReservation}
+export {loadReservations}
