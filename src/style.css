@@ -97,3 +97,23 @@ color:green;
     align-items: center;
     gap: 6rem;
 }
+
+.map-div{
+    display: flex;
+    flex-direction: row;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reservations-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    gap: 20px;
+}
+

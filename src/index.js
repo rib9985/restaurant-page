@@ -3,6 +3,7 @@ import {loadTab} from './text'
 import { loadHome } from './home.js'
 import {loadMenu} from './menu.js'
 import { loadReservations } from './reservations';
+import {loadInfo} from './moreInfo'
 
 import logoPng from './img/logo.png';
 import { loadNavBar } from './nav';
@@ -10,7 +11,7 @@ import { emptyContentDiv } from './text';
 
 
 loadNavBar()
-loadHome()
+loadReservations()
 addListeners()
 
 const contentDiv = document.getElementById('content')
@@ -40,6 +41,14 @@ function reservationsTab(){
 }
 
 
+function moreInfoTab(){
+    emptyContentDiv('content')
+    loadNavBar()
+    addListeners()
+    loadInfo()
+}
+
+
 function addListeners(){
 
 const home = document.getElementById('nav-home');
@@ -50,5 +59,8 @@ menu.addEventListener('click', () => menuTab())
 
 const reservations = document.getElementById('nav-reserve')
 reservations.addEventListener('click', () => reservationsTab())
+
+const moreInfo = document.getElementById('nav-info')
+moreInfo.addEventListener('click', () => moreInfoTab())
 
 }
