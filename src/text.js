@@ -48,13 +48,20 @@ function createLabel(labelname, text){
 return label
 }
 
-function createInput(typeOfInput, id, cssClassName){
+function createInput(typeOfInput, placeholder, id, cssClassName){
     const input = document.createElement('input')
     input.setAttribute('type', `${typeOfInput}`)
     input.setAttribute('id',`${id}`)
     input.setAttribute('class',`${cssClassName}`)
-    input.setAttribute('value',`${value}`)
+    input.setAttribute('placeholder',`${placeholder}`)
     return input
+}
+
+function createForm(action, method){
+    const form = document.createElement('form')
+    form.setAttribute('action', `${action}`)
+    form.setAttribute('method', `${method}`)
+    return form
 }
 
 function createButton(typeOfButton, id, cssClassName){
@@ -89,4 +96,4 @@ const matriciana = "Matriciana: Traditional Italian pasta with spicy tomato sauc
 
 
 
-export {aboutParagraph, moreAboutUs, cacioepepe, lasagna, matriciana, createHeader, createParagraph, createDiv, createImage, createAnchorLink, emptyContentDiv}
+export {aboutParagraph, moreAboutUs, cacioepepe, lasagna, matriciana, createHeader, createParagraph, createDiv, createImage, createAnchorLink, emptyContentDiv, createForm, createLabel, createInput}

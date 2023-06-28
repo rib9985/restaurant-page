@@ -6,7 +6,7 @@ function createNavBar(){
     nav.appendChild(text.createDiv('Home','nav','nav-home'))
     nav.appendChild(text.createDiv('Menu','nav','nav-menu'))
     nav.appendChild(text.createDiv('Reservations','nav','nav-reserve'))
-    nav.appendChild(text.createDiv('Informations','nav','nav-info'))
+    nav.appendChild(text.createDiv('More Information','nav','nav-info'))
     return nav   
 }
 
