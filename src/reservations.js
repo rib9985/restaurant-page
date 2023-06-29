@@ -9,7 +9,7 @@ function createForm(){
     form.appendChild(text.createInput('email', 'Email', 'userEmail,', 'form-input'))
     form.appendChild(text.createInput('date', 'Date of Reservation', 'date', 'form-input'))
     form.appendChild(text.createInput('text', 'Special Requests', 'requests', 'form-input'))
-    form.appendChild(text.createInput('submit', 'Submit', '', 'form-input'))
+    form.appendChild(text.createInput('submit', 'Submit', '', 'submit-input'))
     return form
 }
 
@@ -26,7 +26,6 @@ function createReservationPage(){
     reservation.appendChild(text.createHeader('h1', 'Reservations', 'reservation-header'))
     reservation.appendChild(text.createParagraph(text.reservationText, 'reservation-paragraph'))
     reservation.appendChild(createForm())
-    reservation.appendChild(text.createHeader('h2', 'Or Call Us!', ))
     reservation.appendChild(createCallUsArea())
     return reservation  
 }

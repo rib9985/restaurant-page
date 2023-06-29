@@ -1,3 +1,7 @@
+:root{
+    padding: 100px;
+}
+
 .intro {
     gap: 10px;
     padding: 20px;
@@ -114,6 +118,69 @@ color:green;
     flex-direction: column;
     align-items: center;
     font-size: 2rem;
-    gap: 20px;
+    gap: 2rem;
+}
+
+#callDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+.div-reservation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+input:focus {
+	border-style: solid;
+	border-bottom-width: 0.1rem;
+	outline: none;
+	border-color: lightcoral;
+}
+
+input:hover{
+    color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+input,
+select {
+	border-style: solid;
+	outline: none;
+	border-radius: 10px;
+	height: 2rem;
+	border-color: rgba(rgba(176, 218, 185, 0.26), green, blue, alpha);
+	font-size: 1.5rem;
+	font-family: var(--menu-font);
+	padding: 5px;
+	background-color: var(--main-color);
+	color: var(--orange);
+}
+
+
+.submit-input{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    font-size: 1.5rem;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    background-color: lightgreen;
+}
+
+.submit-input:active{
+    transform: scale(104%);
+	border-style: solid;
+	border-bottom-width: 0.1rem;
+	outline: none;
+	border-color: lightcoral;
 }
 

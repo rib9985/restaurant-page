@@ -83,7 +83,7 @@ function emptyContentDiv(id){
 
 
 //Text Used in the Reservations Module
-const reservationText = 'Have someone special you would like to invite? How about a special occassion? Feel free to reserve a table below!'
+const reservationText = 'Have someone special you would like to invite? How about a special occassion? Feel free to reserve a table below! Or give us a Call!'
 
 
 
@@ -96,4 +96,4 @@ const matriciana = "Matriciana: Traditional Italian pasta with spicy tomato sauc
 
 
 
-export {aboutParagraph, moreAboutUs, cacioepepe, lasagna, matriciana, createHeader, createParagraph, createDiv, createImage, createAnchorLink, emptyContentDiv, createForm, createLabel, createInput}
+export {aboutParagraph, moreAboutUs, reservationText, cacioepepe, lasagna, matriciana, createHeader, createParagraph, createDiv, createImage, createAnchorLink, emptyContentDiv, createForm, createLabel, createInput}
