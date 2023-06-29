@@ -66,6 +66,12 @@
     justify-self: center;
     align-self: center;
     display: flex;
+    filter: drop-shadow(0px 15px 60px #a5a5a5);
+    transition: transform 250ms
+}
+
+.logo-image:hover{
+    transform: scale(1.20);
 }
 
 #content{
@@ -87,7 +93,11 @@ color:green;
 }
 
 .nav-activeTab{
-    color:lightsalmon
+    color:lightsalmon;
+    transform: scale(130%);
+    filter: drop-shadow(0px 2px 3px #cfcfcf);
+    font-weight: bold;
+
 
 }
 

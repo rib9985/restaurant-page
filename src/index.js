@@ -66,4 +66,7 @@ reservations.addEventListener('click', () => reservationsTab())
 const moreInfo = document.getElementById('nav-info')
 moreInfo.addEventListener('click', () => moreInfoTab())
 
+const logo = document.getElementById('main-logo')
+logo.addEventListener('click', () => homeTab())
+
 }

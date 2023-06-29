@@ -14,6 +14,7 @@ function createLogo(){
     const logo = document.createElement('div')
     logo.appendChild(text.createImage(logoPng, 'logo', 'logo-image'))
     logo.setAttribute('class','div-logo')
+    logo.setAttribute('id', 'main-logo')
     return logo
 }
 
