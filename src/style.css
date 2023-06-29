@@ -81,6 +81,20 @@ transform: scale(110%);
 color:green;
 }
 
+.nav:active{
+    transform: scale(110%);
+    color: lightcoral
+}
+
+.nav-activeTab{
+    color:lightsalmon
+
+}
+
+.nav-inactiveTab{
+    color:antiquewhite
+}
+
 .menuItemOne-image, .menuItemTwo-image, .menuItemThree-image {
     display: flex;
     max-height: 400px;
@@ -94,6 +108,8 @@ color:green;
     align-items: center;
     justify-content: center;
 }
+
+
 
 .menu>*{
     display:flex;
