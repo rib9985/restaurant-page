@@ -3,7 +3,6 @@ import { loadHome } from './home.js'
 import {loadMenu} from './menu.js'
 import { loadReservations } from './reservations';
 import {loadInfo} from './moreInfo'
-
 import { loadNavBar } from './nav';
 import { emptyContentDiv } from './text';
 
@@ -11,7 +10,7 @@ import { emptyContentDiv } from './text';
 const contentDiv = document.getElementById('content')
 const emptyDiv = () => contentDiv.innerHTML = ''
 
-reservationsTab()
+homeTab()
 
 function homeTab(){
     emptyDiv()
